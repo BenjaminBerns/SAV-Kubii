@@ -34,6 +34,7 @@ app.put("/products/:productId/problems/:problemId", products.updateProblem);
 app.delete("/products/:productId/problems/:problemId", products.deleteProblem);
 
 
-app.listen(3000, () => {
-    console.log('Serveur démarré sur http://localhost:3000');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, 'Kubii', () => {
+    console.log(`Serveur démarré sur http://kubii:${PORT}`);
 });
