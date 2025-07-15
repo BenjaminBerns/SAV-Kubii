@@ -1,0 +1,16 @@
+{
+  "name": "kubii",
+  "version": "1.0.0",
+  "description": "api pour site interne de kubii (gestion sav | commentaire produit | procédure mail)",
+  "license": "ISC",
+  "author": "benjamin berns",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "token-generator": "^1.0.0"
+  }
+}
