@@ -12,3 +12,15 @@ deploymentTarget = "cloudrun"
 [[ports]]
 localPort = 3000
 externalPort = 80
+
+[workflows]
+runButton = "Start API"
+
+[[workflows.workflow]]
+name = "Start API"
+author = 44912390
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd API && node app.js"

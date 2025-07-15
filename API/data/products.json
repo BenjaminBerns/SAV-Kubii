@@ -1,0 +1,26 @@
+
+[
+    {
+        "id": 1,
+        "name": "raspberry pi 5",
+        "description": "Superbe Micro-Ordinateur de raspberry pi à la pointe de la technologie !",
+        "problems": [
+            {
+                "id": 1,
+                "name": "BIOS MAJ",
+                "description": "Le Bios ne se mets pass à jour automatiquement ce qui empêche de faire boot l'OS.",
+                "solution": "Mettre à jour le BIOS avec PINN dans Raspberry pi Imager",
+                "data": "Fichier.pdf (possible de le télécharger)",
+                "link": "https://waveshare.com"
+            },
+            {
+                "id": 2,
+                "name": "Connexion WIFI",
+                "description": "Le wifi n'est pas paramétré",
+                "solution": "Aller dans les configurations wifi -> Séléctionnez votre WIFI puis rentrez les infos.",
+                "data": "Fichier.pdf (possible de le télécharger)",
+                "link": "https://raspberrypi.com"
+            }
+        ]
+    }
+]
