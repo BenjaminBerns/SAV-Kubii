@@ -6,14 +6,7 @@ const products = require("./products");
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.json(
-        {
-            message : "Bienvenue sur l'API Kubii SAV",
-            data : {}
-        }
-    );
-});
+app.get('/', (req, res) => res.send('Hello from Koyeb!'));
 
 // Routes utilisateurs
 app.post("/login", users.Login);
@@ -34,7 +27,6 @@ app.put("/products/:productId/problems/:problemId", products.updateProblem);
 app.delete("/products/:productId/problems/:problemId", products.deleteProblem);
 
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, 'Kubii', () => {
-    console.log(`Serveur démarré sur http://kubii:${PORT}`);
-});
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log(`Server running on port ${port}`));
