@@ -5,9 +5,7 @@ const products = require("./products");
 const cors = require("cors"); // Importer cors
 
 // Configuration CORS
-app.use(cors({
-    origin: "http://localhost:4200"
-}));
+app.use(cors({ origin: ["http://localhost:4200", "https://tonfront.koyeb.app"] }));
 
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.json());
