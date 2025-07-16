@@ -3,6 +3,11 @@ const app = express();
 const users = require("./users");
 const products = require("./products");
 
+// Configuration CORS
+app.use(cors({
+    origin: "http://localhost:4200"
+}));
+
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.json());
 
