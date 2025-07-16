@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const users = require("./users");
 const products = require("./products");
+const cors = require("cors"); // Importer cors
 
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.json());
